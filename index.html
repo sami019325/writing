@@ -16,7 +16,44 @@
       <h2> ✊Best of luck👍</h2>
       </div>
       <h2 class="wbox" id="myInp" contenteditable="true" >Start writting here</h2>
-      
+      <button id="button" onclick="copyElementText('writing')"></button>
+	
+	
+	
+	
+	
+	
+ <script>
+                   function copyElementText(id) {
+                   var text = document.getElementById(id).innerText;
+                  var elem = document.createElement("textarea");
+                   document.body.appendChild(elem);
+                  elem.value = text;
+                  elem.select();
+                   document.execCommand("copy");
+                   document.body.removeChild(elem);
+
+
+
+                   $(function() {
+                  $( "#button" ).click(function() {
+                  $( "#button" ).addClass( "onclic", 250, validate);
+                   });
+
+                   function validate() {
+                    setTimeout(function() {
+                    $( "#button" ).removeClass( "onclic" );
+                    $( "#button" ).addClass( "validate", 450, callback );
+                    }, 2250 );
+                   }
+               function callback() {
+                setTimeout(function() {
+               $( "#button" ).removeClass( "validate" );
+               }, 1250 );
+           }
+            });
+            } 
+            </script>
       
 </body>
 </html>
