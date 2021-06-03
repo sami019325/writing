@@ -62,8 +62,8 @@ animation: bodymove 50s infinite;
 
 .myaudio{
   opacity: 50%;
-  position: fixed;
-  top: 105px;
+  position: absolute;
+  top: 93px;
   left: 40%;
   right: 40%;
 }
