@@ -3,27 +3,39 @@
 <head>
 	<title> hand writing</title>
 	  <link rel="stylesheet" href="index.css">
+    <script src="audio.js"></script>
 
 
 
 </head>
 <body class="body">
 
+      <div class="head">
+        <h1 class="h1"> 😊Start Writing 😊</h1>
+        <h2 class="h2"> ✊Best of luck👍</h2>
+
+       
+       <audio controls autoplay class="myaudio">
+        
+           <source src="audio.mp3" type="audio/mpeg">
+           Your browser does not support the audio element.
+       </audio>
+      
+    </div>
 
 
-      <div class="heading">
-      <h1 class="h1"> 😊Start Writing 😊</h1>
-      <h2> ✊Best of luck👍</h2>
-      </div>
+
       <h2 class="wbox" id="writing" contenteditable="true" >Start writting here</h2>
       <button id="button" onclick="copyElementText('writing')"></button>
-	
-	
-	
-	
-	
-	
- <script>
+
+      
+
+
+
+
+      
+
+            <script>
                    function copyElementText(id) {
                    var text = document.getElementById(id).innerText;
                   var elem = document.createElement("textarea");
@@ -54,6 +66,7 @@
             });
             } 
             </script>
+                  
       
 </body>
 </html>
