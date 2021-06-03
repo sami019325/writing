@@ -1,17 +1,19 @@
-.heading{
+.head{
+  position: relative;
   text-align: center;
   color: rgb(46, 46, 45);
   width: 100%;
+  height: 150px;
   background-color: beige;
   border: 2px solid black;
-  animation: mymove 10s infinite;
+  animation: mymove 50s infinite;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-radius: 20px;
   
   
 }
-
 
 .h1{
   font-size: 26px;
@@ -19,6 +21,7 @@
 .h2{
   font-size: 16px;
 }
+
 
 .wbox{
   padding: 2%;
@@ -30,33 +33,45 @@
 }
 
 .body{
-animation: bodymove 5s infinite;
+animation: bodymove 50s infinite;
 }
 
 
 
 @keyframes mymove {
-  0%   {background-color: rgb(20, 172, 78);}
-  25%  {background-color: rgb(167, 231, 151);}
-  75%  {background-color: rgb(57, 212, 78);}
-  100% {background-color: rgb(178, 221, 23);}
+  0%   {background-image: linear-gradient( 135deg, #FEB692 10%, #EA5455 100%);
+    }
+  25%  {background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    }
+  75%  {background-image: radial-gradient( circle farthest-corner at 0.8% 3.1%,  rgba(255,188,224,1) 0%, rgba(170,165,255,1) 46%, rgba(165,255,205,1) 100.2% );
+    }
+  100% {background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    ;}
 }
 
 
 @keyframes bodymove {
-  0%   {background-color: rgb(230, 241, 200);}
-  25%  {background-color: rgb(238, 248, 211);}
-  75%  {background-color: rgb(232, 235, 64);}
-  100% {background-color: rgb(227, 235, 198);}
+  0%    {background-image: linear-gradient( 95.2deg,  rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );}
+  25%  {background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );}
+  50%  { background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );}
+  75%  {background-image: linear-gradient( 106.1deg,  rgba(69,242,143,0.52) 10.2%, rgba(14,228,175,0.61) 83.6% );}
+  100% {background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );}
 }
 
 
+.myaudio{
+  opacity: 50%;
+  position: fixed;
+  top: 105px;
+  left: 40%;
+  right: 40%;
+}
+.myaudio:hover{
+  opacity: 100%;
+}
 
-/* Set text color to white and background color to a shade of teal */
-
-
-
-
+/*copy button of the html file */
 
 @charset "UTF-8";
 * {
@@ -151,6 +166,5 @@ button:after {
     transform: rotate(360deg);
   }
 }
-
 
 
