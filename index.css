@@ -5,6 +5,10 @@
   background-color: beige;
   border: 2px solid black;
   animation: mymove 10s infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
   
 }
 
@@ -87,6 +91,10 @@ button {
   transition: all 0.25s ease;
   float: right;
   margin-right: 10%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
 }
 button:hover {
   color: white;
