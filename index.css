@@ -1,0 +1,39 @@
+.heading{
+  text-align: center;
+  color: rgb(46, 46, 45);
+  width: 100%;
+  background-color: beige;
+  border: 2px solid black;
+  animation: mymove 10s infinite;
+  
+}
+.wbox{
+  padding: 2%;
+}
+.body{
+  background-color:powderblue;
+  min-height: 200px;
+
+}
+
+.body{
+animation: bodymove 5s infinite;
+}
+
+
+
+@keyframes mymove {
+  0%   {background-color: rgb(20, 172, 78);}
+  25%  {background-color: rgb(167, 231, 151);}
+  75%  {background-color: rgb(57, 212, 78);}
+  100% {background-color: rgb(178, 221, 23);}
+}
+
+
+@keyframes bodymove {
+  0%   {background-color: rgb(230, 241, 200);}
+  25%  {background-color: rgb(238, 248, 211);}
+  75%  {background-color: rgb(232, 235, 64);}
+  100% {background-color: rgb(227, 235, 198);}
+}
+
