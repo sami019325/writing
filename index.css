@@ -60,6 +60,15 @@ animation: bodymove 50s infinite;
 }
 
 
+/*mobile devices */
+.mobile{
+  opacity: 0%;
+}
+#pc{
+  opacity: 0%;
+}
+
+
 .myaudio{
   opacity: 50%;
  border-radius: 5px;
@@ -165,5 +174,35 @@ button:after {
     transform: rotate(360deg);
   }
 }
+
+
+
+/* for mobile devices */
+
+@media only screen and (max-width:700px){
+  button{
+    opacity: 0%;
+  }
+  .head{
+    opacity: 0%;
+  }
+  .wbox{
+    opacity: 0%;
+  }
+  .mobile{
+    text-align:right;
+    opacity: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  #pc{
+    float: left;
+    opacity: 100%;
+  }
+
+
+};
+ 
 
 
