@@ -170,4 +170,17 @@ button:after {
 
 
 
+.samiCopyright{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #1ECD97;
+  bottom: 0;
+  left: 0%;
+  right: 0%;
+  opacity: 20%;
+}
+.samiCopyright:hover{
+  opacity: 100%;
+}
 
