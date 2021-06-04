@@ -190,14 +190,14 @@ button:after {
     opacity: 0%;
   }
   .mobile{
-    text-align:right;
+    text-align:center;
     opacity: 100%;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
   #pc{
-    float: left;
+    
     opacity: 100%;
   }
 
